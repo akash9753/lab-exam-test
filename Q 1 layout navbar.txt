@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display: flex; flex-direction:column;background:  red;height: 65px;font-size: 32px;color:white;justify-content: center;align-items: center; ">
+    <div>NAVBAR</div>
+    </div>
+
+    <div style="display: flex;background: rgb(131, 131, 131);height: 200px;justify-content: space-between;">
+    <div>1</div>
+    <div style="display: flex;background: greenyellow;width: 1000px;font-size: 32px;color:white;justify-content: center;align-items: center;">hello cdac</div>
+    <div>3</div>
+    </div>
+
+    <div style="display: flex;background: rgb(131, 131, 131);height: 200px; justify-content: space-between;">
+        <div>1</div>
+        <div style="display: flex;background:orangered;width: 1000px;font-size: 32px;color:white;justify-content: center;align-items: center;">good morning</div>
+        <div>3</div>
+    </div>
+
+
+    <div style="display: flex;background: rgb(131, 131, 131);height: 200px; justify-content: space-between;">
+        <div>1</div>
+        <div style="display: flex;background:pink;width: 1000px;font-size: 32px;color:white;justify-content: center;align-items: center;">our lab exam </div>
+        <div>3</div>
+    </div>
+    
+    
+    <div style="display: flex;background: rgb(131, 131, 131);height: 200px; justify-content: space-between;">
+            <div>1</div>
+            <div style="display: flex;background:green;width: 1000px;font-size: 32px;color:white;justify-content: center;align-items: center;">enjoying cdac atmoshphere </div>
+            <div>3</div>
+    </div>
+
+
+    <div style="display: flex;background: rgb(131, 131, 131);height: 200px; justify-content: space-between;">
+        <div>1</div>
+        <div style="display: flex;background:rosybrown;width: 1000px;font-size: 32px;color:white;justify-content: center;align-items: center;">Bye</div>
+        <div>3</div>
+</div>
+    
+</body>
+</html>

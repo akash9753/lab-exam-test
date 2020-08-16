@@ -1,0 +1,143 @@
+HTML FILE content
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="form.js"></script>
+</head>
+<body>
+    <div style="margin-top: 4px;margin-bottom: 4px;">
+    <input type="text"
+    name="username"
+    placeholder="enter your user name"
+    id="inputid1"
+    >
+    </div>
+
+    <button onclick="commenthere()">username</button>
+    <div id="commentbox"></div>
+    <div 
+    id="referencecommentid">
+    <div style="display:flex; justify-content: space-between;">
+    <div>sample reference comment</div>
+</div>
+</div>
+
+    <div style="margin-top: 4px;margin-bottom: 4px;">
+        <input type="number"
+        name="password"
+        placeholder="enter your user name"
+        id="inputid2"
+        >
+        </div>
+    
+        <button onclick="commenthere2()">password</button>
+        <div id="commentbox2"></div>
+        <div 
+        id="referencecommentid2"
+        <div style="display:flex; justify-content: space-between;visibility: hidden;">
+        <div>sample reference comment</div>
+    </div>
+    </div>
+    
+
+    <div style="margin-top: 4px;margin-bottom: 4px;">
+        <input type="email"
+        name="password"
+        placeholder="enter your user name"
+        id="inputid3"
+        >
+        </div>
+    
+        <button onclick="commenthere3()">email</button>
+        <div id="commentbox3"></div>
+        <div 
+        id="referencecommentid3"
+        <div style="display:flex; justify-content: space-between;visibility: hidden;">
+        <div>sample reference comment</div>
+    </div>
+    </div>
+</body>
+</html>
+
+
+---------------------------------------------------------------------
+js file content
+
+function commenthere(){
+    let usercomment = document.querySelector("#inputid1").Value;
+    const newelement = document.querySelector("#referencecommentid").cloneNode(true);
+
+    newelement.removeAttribute("id");
+    newelement.style.visibility = "visible";
+    newelement.children[0].innerHTML = usercomment;
+
+
+    const commentbox = document.querySelector("#commentbox");
+
+    commentbox.insertBefore(newelement,commentbox.firstChild);
+
+    document.querySelector("#inputid1").Value="";
+}
+
+function commenthere2(){
+    let usercomment = document.querySelector("#inputid2").Value;
+    const newelement = document.querySelector("#referencecommentid2").cloneNode(true);
+
+    newelement.removeAttribute("id");
+    newelement.style.visibility = "visible";
+    newelement.children[0].innerHTML = usercomment;
+
+
+    const commentbox2 = document.querySelector("#commentbox2");
+
+    commentbox2.insertBefore(newelement,commentbox2.firstChild);
+
+    document.querySelector("#inputid2").Value="";
+}
+
+function commenthere3(){
+    let usercomment = document.querySelector("#inputid3").Value;
+    const newelement3 = document.querySelector("#referencecommentid3").cloneNode(true);
+
+    newelement3.removeAttribute("id");
+    newelement3.style.visibility = "visible";
+    newelement3.children[0].innerHTML = usercomment;
+
+
+    const commentbox3 = document.querySelector("#commentbox3");
+
+    commentbox3.insertBefore(newelement3,commentbox3.firstChild);
+
+    document.querySelector("#inputid3").Value="";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
